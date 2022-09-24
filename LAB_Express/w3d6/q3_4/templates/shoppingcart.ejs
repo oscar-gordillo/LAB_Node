@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+    </head>
+    <body>
+        <ol>            
+            <% products.forEach((elem)=>{%>
+                <li><%= elem.name %><ul>
+                        <li><%= elem.price %></li>
+                        <li><%= elem.quantity %></li>
+                        <li><%= elem.description %></li>
+                    </ul>
+                </li>
+            <% }); %>            
+        </ol>
+    </body>
+</html>
