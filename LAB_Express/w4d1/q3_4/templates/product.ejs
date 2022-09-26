@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab Express</title>
+    </head>
+    <body>
+        <hr/>         
+        <form method="post" action="/addToCart">
+            <label>id:</label>
+            <input type="text" name="id" value="<%=id%>"/>
+            <label>name</label>
+            <input type="text" name="name" value="<%=name%>"/>
+            <label>price</label>
+            <input type="text" name="price" value="<%=price%>"/>
+            <label>description</label>
+            <input type="text" name="description" value="<%=description%>"/>
+            <label>quantity</label>
+            <input type="text" name="quantity" value="1"/>
+            <input type="submit" value="Add to Cart"/>
+        </form>
+        <a href="/shoppingcart" >Go to shopping cart</a>
+
+                </body>
+</html>
