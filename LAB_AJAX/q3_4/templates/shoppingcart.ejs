@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shopping Cart</title>
+    </head>
+    <body>
+        <ol>            
+            <% for(let key in cart){%>
+                <li><%= cart[key].name %><ul>
+                        <li><%= cart[key].price %></li>
+                        <li><%= cart[key].quantity %></li>
+                        <li><%= cart[key].description %></li>
+                    </ul>
+                </li>
+            <% } %>            
+        </ol>
+    </body>
+</html>

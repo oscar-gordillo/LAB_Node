@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab Express</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="\myjs\logic.js"></script>
+    </head>
+    <body>
+        <hr/>         
+        <form method="post" action="/addToCart">
+            <label>id:</label>
+            <input type="text" id="id" value="<%=id%>"/>
+            <label>name</label>
+            <input type="text" id="name" value="<%=name%>"/>
+            <label>price</label>
+            <input type="text" id="price" value="<%=price%>"/>
+            <label>description</label>
+            <input type="text" id="description" value="<%=description%>"/>
+            <label>quantity</label>
+            <input type="text" id="quantity" value="1"/>
+            <input type="button" id="butAddCart" value="Add to Cart"/>
+        </form>
+        <div id="resp"></div>
+        <a id="aLink" href="/shoppingcart" >Go to shopping cart</a>
+
+                </body>
+</html>
